@@ -1,0 +1,43 @@
+# OS files
+Icon
+.DS_Store
+
+# TeX files
+*.aux
+*.log
+*.bbl
+*.blg
+*.toc
+
+# Checked/Compiled files
+*.agdai
+*.cede
+MAlonzo
+__pycache__
+*.info
+*.o
+*.hi
+*.py[cod]
+bin
+obj
+build
+dist
+
+# Editor/tag files
+\#*\#
+*.swp
+tags
+.vs
+
+# included files
+packages/
+
+# (cabal) sandbox files
+.cabal-sandbox
+cabal.sandbox.config
+
+# local config files with login info
+local_settings.py
+
+# sqlite
+*.sqlite3

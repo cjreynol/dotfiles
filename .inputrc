@@ -1,0 +1,5 @@
+# change tab completion to cycle through options
+# ctrl-p does not work exactly right
+Control-N:  menu-complete
+Control-P:  menu-complete-backward
+

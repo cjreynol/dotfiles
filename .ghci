@@ -1,0 +1,5 @@
+-- searches hoogle database for matches
+:def hoogle \x -> return $ ":!hoogle \"" ++ x ++ "\""
+
+-- brings up docstrings for matches
+:def doc \x -> return $ ":!hoogle --info \"" ++ x ++ "\""
