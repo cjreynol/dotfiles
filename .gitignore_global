@@ -2,9 +2,12 @@
 Icon
 .DS_Store
 
+# log and profile files
+*.log
+*.prof
+
 # TeX files
 *.aux
-*.log
 *.bbl
 *.blg
 *.toc
@@ -30,7 +33,7 @@ tags
 .vs
 
 # included files
-packages/
+packages
 
 # (cabal) sandbox files
 .cabal-sandbox
