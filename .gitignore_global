@@ -12,7 +12,7 @@ Icon
 *.blg
 *.toc
 
-# Checked/Compiled files
+# checked/compiled/build/included files
 *.agdai
 *.cede
 MAlonzo
@@ -25,6 +25,9 @@ bin
 obj
 build
 dist
+packages
+MANIFEST
+*.egg-info
 
 # Editor/tag files
 \#*\#
@@ -32,14 +35,11 @@ dist
 tags
 .vs
 
-# included files
-packages
-
 # (cabal) sandbox files
 .cabal-sandbox
 cabal.sandbox.config
 
-# local config files with login info
+# Django local config files
 local_settings.py
 
 # sqlite

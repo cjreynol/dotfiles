@@ -5,6 +5,9 @@
 set number
 set ruler
 
+"Always show the statusline at the bottom
+set laststatus=2
+
 "Syntax highlighting on
 syntax on
 
