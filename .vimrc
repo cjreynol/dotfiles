@@ -8,6 +8,9 @@ set ruler
 "Always show the statusline at the bottom
 set laststatus=2
 
+"Customize the tabline
+set guitablabel=%N:%t%M
+
 "Syntax highlighting on
 syntax on
 
@@ -75,3 +78,9 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 
 "Tell vim to search for tag files in current directory, then upwards until home
 set tags=tags;$HOME
+
+"Add all directories under the current directory to path, recursively
+set path=$PWD/**
+
+"Ignore certain filetypes during vim operations, like autocomplete
+set wildignore+=*.pyc,*.obj,*.o,*.hi,*.swp
