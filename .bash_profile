@@ -1,9 +1,6 @@
 # Updating prompt
 export PS1="\[\e[1;31m\][\W]\[\e[m\] | \[\e[1;33m\]\T\[\e[m\] | \[\e[1;94m\]\u\[\e[m\e[1;32m\] \$ \[\e[m\]"
 
-# change operation of shell to include some vi-like commands
-set -o vi
-
 # used for screen window titles, the characters and the space are needed to 
 # key off of when displaying folder in screen title on bottom bar
 case "$TERM" in

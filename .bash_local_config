@@ -1,9 +1,6 @@
 # Add my scripts dir to the PATH
 export PATH="/Users/chadreynolds/dev/scripts:${PATH}"
 
-# Adding agda/agda-mode to PATH
-export PATH="/Users/chadreynolds/.cabal-sandboxes/agda-2.4.2.3/.cabal-sandbox/bin:${PATH}"
-
 # Add cabal installed executables to PATH
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 

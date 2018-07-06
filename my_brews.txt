@@ -1,0 +1,11 @@
+automake
+cabal-install
+ctags
+irssi
+mono
+nasm
+pkg-config
+scons
+sdl2
+sphinx-doc
+vim

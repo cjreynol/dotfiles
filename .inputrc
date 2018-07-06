@@ -3,3 +3,6 @@
 Control-N:  menu-complete
 Control-P:  menu-complete-backward
 
+# vi editing
+set show-mode-in-prompt on
+set editing-mode vi
