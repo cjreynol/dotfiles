@@ -9,8 +9,9 @@ esac
 
 # binary/command aliases for common options
 alias cabaln='cabal --no-require-sandbox'
-    # filename headers, ignore binary files, ignore case, 
-    # add line numbers, recursive
+
+# filename headers, ignore binary files, ignore case, 
+# add line numbers, recursive
 alias grepc='grep -HIinr'
 
 # git aliases
@@ -23,4 +24,6 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # bring in computer local configuration file
-source ~/.dotfiles/.bash_local_config
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    source ~/.macOS_bash_local_config
+fi

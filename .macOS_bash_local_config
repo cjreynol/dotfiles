@@ -1,5 +1,6 @@
+# used for macOS
 # Add my scripts dir to the PATH
-export PATH="/Users/chadreynolds/dev/scripts:${PATH}"
+export PATH="~/dev/scripts:${PATH}"
 
 # Add cabal installed executables to PATH
 export PATH="$HOME/Library/Haskell/bin:$PATH"

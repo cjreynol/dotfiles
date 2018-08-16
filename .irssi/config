@@ -36,15 +36,16 @@ channels = (
   { name = "#ghc"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#haskell"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#python"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#python-dev"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#git"; chatnet = "Freenode"; autojoin = "Yes"; },
+  { name = "#python-dev"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#git"; chatnet = "Freenode"; autojoin = "No"},
   { name = "#bash"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "##math"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "##networking"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#vim"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "##learnpython"; chatnet = "Freenode"; autojoin = "No"; },
-  { name = "#gamedev"; chatnet = "AfterNET"; autojoin = "Yes"; },
-  { name = "#ludumdare"; chatnet = "AfterNET"; autojoin = "No"; }
+  { name = "#gamedev"; chatnet = "AfterNET"; autojoin = "No"; },
+  { name = "#ludumdare"; chatnet = "AfterNET"; autojoin = "No"},
+  { name = "#pygame"; chatnet = "Freenode"; autojoin = "No"}
 );
 
 aliases = {

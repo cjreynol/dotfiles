@@ -39,7 +39,7 @@ tags
 .cabal-sandbox
 cabal.sandbox.config
 
-# Django local config files
+# local config files (like Django)
 local_settings.py
 
 # sqlite
