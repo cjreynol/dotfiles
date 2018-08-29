@@ -45,7 +45,8 @@ channels = (
   { name = "##learnpython"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#gamedev"; chatnet = "AfterNET"; autojoin = "No"; },
   { name = "#ludumdare"; chatnet = "AfterNET"; autojoin = "No"},
-  { name = "#pygame"; chatnet = "Freenode"; autojoin = "No"}
+  { name = "#pygame"; chatnet = "Freenode"; autojoin = "No"},
+  { name = "##c++"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {
