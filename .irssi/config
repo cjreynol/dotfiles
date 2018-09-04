@@ -13,6 +13,15 @@ servers = (
     chatnet = "AfterNET";
     port = "6667";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.chat.twitch.tv";
+    chatnet = "TwitchTV";
+    port = "6667";
+    password = "<oauth:token>";
+    use_tls = "no";
+    tls_verify = "no";
+    autoconnect = "yes";
   }
 );
 
@@ -25,6 +34,14 @@ chatnets = {
   };
   AfterNET = {
     type = "IRC";
+    max_kicks = "1";
+    max_msgs = "4";
+    max_whois = "1";
+  };
+  TwitchTV = {
+    type = "IRC";
+    nick = "<twitch_username>";
+    username = "<twitch_username>";
     max_kicks = "1";
     max_msgs = "4";
     max_whois = "1";
@@ -46,7 +63,8 @@ channels = (
   { name = "#gamedev"; chatnet = "AfterNET"; autojoin = "No"; },
   { name = "#ludumdare"; chatnet = "AfterNET"; autojoin = "No"},
   { name = "#pygame"; chatnet = "Freenode"; autojoin = "No"},
-  { name = "##c++"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "##c++"; chatnet = "Freenode"; autojoin = "Yes"; },
+  { name = "#<twitch_username>"; chatnet = "TwitchTV"; autojoin = "No"; }
 );
 
 aliases = {
@@ -303,9 +321,9 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "Chad Reynolds";
-    user_name = "chadreynolds";
-    nick = "cjreynolds";
+    real_name = "<name>";
+    user_name = "<irc_username>";
+    nick = "<irc_nick>";
     timestamp_format = "%H:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; };

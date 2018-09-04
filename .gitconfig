@@ -1,6 +1,6 @@
 [user]
-	name = Chad Reynolds
-	email = cjreynol13@aol.com
+	name = <name>
+	email = <email>
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# sends gist to github
+# in the form <name> <description> <content> [public=false]
+# use single quotes and escape any double quotes in gist content
+
+# future updates with more management tools:  ACTION path
+# DELETE /gists/:id             - deletes
+# GET /gists/:id                - retrieves via id
+# GET /users/:username/gists    - retrieves all gists for user
+
+
+uName=<git_username>
+gistToken=<token>
+githubURL=https://api.github.com
+createPath=/gists
+
+name="$1"
+description="$2"
+content="$3"
+if [ -z "$4" ]; then
+    public=false
+else
+    public=true
+fi
+
+#echo "{\"public\":${public},\"files\":{\"${name}\":{\"content\":\"${content}\"}}}"
+
+curl -X POST -d "{\"public\":${public},\"description\":\"${description}\",\"files\":{\"${name}\":{\"content\":\"${content}\"}}}" -u $uName:$gistToken $githubURL$createPath
