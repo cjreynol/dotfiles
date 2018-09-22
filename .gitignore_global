@@ -1,17 +1,3 @@
-# OS files
-Icon
-.DS_Store
-
-# log and profile files
-*.log
-*.prof
-
-# TeX files
-*.aux
-*.bbl
-*.blg
-*.toc
-
 # checked/compiled/build/included files
 *.agdai
 *.cede
@@ -25,23 +11,37 @@ bin
 obj
 build
 dist
+dist-newstyle
 packages
 MANIFEST
 *.egg-info
+.ghc.environment*
+
+# TeX compiled/output files
+*.aux
+*.bbl
+*.blg
+*.toc
+
+# OS files
+Icon
+.DS_Store
+
+# log and profile outputs
+*.log
+*.prof
 
 # Editor/tag files
 \#*\#
-*.swp
-*.swo
+*.sw[op]
 tags
 .vs
 
-# (cabal) sandbox files
+# local config/sandbox files (like Django/cabal)
+local_settings.py
+cabal.project.local
 .cabal-sandbox
 cabal.sandbox.config
-
-# local config files (like Django)
-local_settings.py
 
 # sqlite
 *.sqlite3
