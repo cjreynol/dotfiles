@@ -84,3 +84,8 @@ set path=$PWD/**
 
 "Ignore certain filetypes during vim operations, like autocomplete
 set wildignore+=*.pyc,*.obj,*.o,*.hi,*.swp
+
+"(re)build tagfiles after saving
+au BufWritePost *.hs            silent! :exec ":!find . -type f -name \"\*.\*hs\" | xargs hasktags -x -c"
+au BufWritePost *.c,*.cpp,*.h   silent! :exec ":!ctags -R"
+au BufWritePost *.py            silent! :exec ":!ctags -R"
