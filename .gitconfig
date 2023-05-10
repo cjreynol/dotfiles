@@ -1,6 +1,8 @@
 [user]
-    name = Chad Reynolds        # <name>
-    email = cjreynol13@aol.com  # <email>
+  name = Chad Reynolds        # <name>
+  email = cjreynol13@aol.com  # <email>
+[init]
+  defaultBranch = main
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global

@@ -5,10 +5,16 @@ export EDITOR=vim
 
 ##### aliases #####
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 ##### os-specific config files #####
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    source ~/.macOS_bash_local_config
+  source ~/.macOS_bash_local_config
 fi
+
+##### environment-specific configs #####
+if [ -f ~/.ghcup/env ]; then
+  source ~/.ghcup/env
+fi
+
