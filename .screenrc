@@ -1,14 +1,46 @@
 # do not display the copyright page
 startup_message off
 
-# remember scrolling history up to 1000 lines
-defscrollback 1000
+# remember scrolling history
+defscrollback 5000
+
+# split navigation personal shortcuts
+bind j focus down
+bind k focus up
+bind h focus left
+bind l focus right
 
 # set shelltitle
-shelltitle ' |bash:'
+#shelltitle ' |bash:'
 
 # persistent display at the bottom of the screen
-hardstatus alwayslastline "%{=b}%{G} Screen(s): %{b}%w %=%{kG}%C%A  %D, %Y/%M/%d "
+#hardstatus alwayslastline "%{=b}%{G} Screen(s): %{b}%w %=%{kG}%C%A  %D, %Y/%M/%d "
+hardstatus alwayslastline "%{=b}%{C}Session - %S %{W}| %{G}Current Window = (*%n) %t %{W}| %{-b}%{Y}Other Windows - [%W] %=%{r}%m/%d - %C%A
 
 # persist layouts when de/re-attatching to a screen session
-layout save default
+layout autosave on
+layout save default # layout saving only works for named layouts
+
+# #####################
+# automating window/layout setup
+# #####################
+
+# default work windows and setup
+  # left half windows
+screen -t VC 0
+screen -t Run 1
+  # right half windows
+screen -t Build 2
+screen -t Debug 3
+
+# attach to default layout
+layout new default
+layout attach default
+layout select default
+
+# split and populate window regions
+select 0
+split -V
+focus right
+select 2
+focus left

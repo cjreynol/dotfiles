@@ -9,13 +9,17 @@
 [push]
 	default = simple
 [color]
-    diff = auto
-    status = auto
-    branch = auto
-    interactive = auto
-    ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
 [merge]
-    summary=true
+	summary = true
+[safe]
+	directory = *
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [url "git://github.com/ghc/packages-"]
 	insteadOf = git://github.com/ghc/packages/
 [url "http://github.com/ghc/packages-"]

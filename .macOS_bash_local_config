@@ -1,5 +1,3 @@
-# used for macOS
-
 # Add cabal installed executables to PATH
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 

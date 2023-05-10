@@ -1,5 +1,5 @@
-"Change encoding to better support Unicode, supposedly
-:set fencs=ucs-bom,utf-8,utf-16le,default,latin1
+" Enable modern Vim features not compatible with Vi spec
+set nocompatible
 
 "Shows line numbers and row,column count
 set number
@@ -45,12 +45,12 @@ set wildmode=longest,list,full
 set wildmenu
 
 "Changes tabs to be inserted as spaces, fixing formatting issues
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set expandtab
 
 "Changes width of shift using visual mode > or >> commands
-set shiftwidth=4
+set shiftwidth=2
 
 "Code folding options to determine where folds stop and start
 set foldmethod=indent
@@ -76,16 +76,5 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
-"Tell vim to search for tag files in current directory, then upwards until home
-set tags=tags;$HOME
-
-"Add all directories under the current directory to path, recursively
-set path=$PWD/**
-
 "Ignore certain filetypes during vim operations, like autocomplete
 set wildignore+=*.pyc,*.obj,*.o,*.hi,*.swp
-
-"(re)build tagfiles after saving
-au BufWritePost *.hs            silent! :exec ":!find . -type f -name \"\*.\*hs\" | xargs hasktags -x -c"
-au BufWritePost *.c,*.cpp,*.h   silent! :exec ":!ctags -R"
-au BufWritePost *.py            silent! :exec ":!ctags -R"
