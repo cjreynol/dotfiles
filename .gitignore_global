@@ -36,6 +36,8 @@ Icon
 *.sw[op]
 tags
 .vs
+*.code-workspace
+tasks.json
 
 # local config/sandbox files (like Django/cabal)
 local_settings.py

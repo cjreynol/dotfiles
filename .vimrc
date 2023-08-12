@@ -15,7 +15,7 @@ set guitablabel=%N:%t%M
 syntax on
 
 "work with os clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 "update backspacing to be less restrictive
 set backspace=indent,eol,start
